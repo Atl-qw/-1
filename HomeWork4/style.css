@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  min-width: 800px;
+  text-align: center;
+}
+
+#title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  margin-bottom: 30px ;  
+}
+
+.tabs {
+  border: 1px solid lightgray;
+}
+
+.tabs__nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.tabs__link {
+  width: 100%;
+  max-width: 90px;
+  padding: 7px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.tabs__link_active {
+  background: lightgray;
+  cursor: default;
+}
+
+.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+  background-color: #efefef;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
+.todolist-ul {
+  list-style: none;
+}
+
+.todolist-ul li {
+  max-width: 400px;
+  border: 1px solid black;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todolist-ul li.completed {
+  transform: scale(0.92);
+  opacity: 80%;
+}
+
+.todolist-ul li.completed span {
+  text-decoration: line-through;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+}
+
+button.danger {
+  color: #550e0e;
+  background-color: #e74f4f;
+}
+
+button.success {
+  color: #104e15;
+  background-color: chartreuse;
+}
